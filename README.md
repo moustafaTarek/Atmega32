@@ -14,5 +14,5 @@
 10-I2C
 
 ### notes 
-1- you must include macros file in any driver
+1- you must include macros file in any driver <br />
 2- LCD have a specific macros you must include 
