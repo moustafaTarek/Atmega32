@@ -1,6 +1,6 @@
 # Atmega32
 
-Drivers for microcontroller atmega32
+##Drivers for microcontroller atmega32
 
 1- DIO functions ( digital  input / output)
 2- led 
