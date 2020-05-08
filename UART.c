@@ -39,17 +39,11 @@ void UART_initizalize(unsigned long buad)
 	//CLR_BIT(UCSRC,UPM0);
 	
 	/* stop bit select */
-	SET_BIT(UCSRC,USBS); // 2 bit for stop bit 
+	CLR_BIT(UCSRC,USBS); // 1 bit for stop bit 
 	
 	/* chosing the character size */
-	SET_BIT(UCSRC,UCSZ1);
-    SET_BIT(UCSRC,UCSZ0);
-	SET_BIT(UCSRC,URSEL);
 	
-	
-	
-	CLR_BIT(UCSRB,UCSZ2);
-
+	UCSRC=(1<<URSEL)|(1<<UCSZ0)|(1<<UCSZ1);
 	
 	
 }
